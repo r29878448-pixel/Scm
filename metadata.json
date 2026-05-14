@@ -1,0 +1,11 @@
+{
+  "name": "Remix: Remix: Sachin Academy Pro",
+  "description": "Premium educational platform for batches, subjects, and study materials with deep API integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "authentication",
+    "database",
+    "video_player",
+    "pdf_viewer"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and enrollment data",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "purchasedBatches": { "type": "array", "items": { "type": "string" } },
+        "token": { "type": "string" },
+        "loginPhone": { "type": "string" },
+        "lastLogin": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Batch": {
+      "title": "Batch",
+      "description": "Course batch details cached for quick access",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "string" },
+        "startDate": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/batches/{batchId}": {
+      "schema": "Batch",
+      "description": "Available course batches"
+    },
+    "/admin/config": {
+      "schema": "object",
+      "description": "Admin configuration and stats"
+    }
+  }
+}
