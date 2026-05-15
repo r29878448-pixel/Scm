@@ -13,7 +13,9 @@ export const redis = new Redis({
 export const ACCOUNTS = [
   { phone: "9140256954", pass: "Vikas@9651" },
   { phone: "9508063031", pass: "Soni@95080" },
-  { phone: "6260590329", pass: "Rahul@123" }
+  { phone: "6260590329", pass: "Rahul@123" },
+  { phone: "jaipk9576@gmail.com", pass: "jay@123#" }
+  
 ];
 
 const BASE_URL = "https://sachinacademyapi.classx.co.in";
