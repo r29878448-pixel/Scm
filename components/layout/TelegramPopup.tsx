@@ -21,7 +21,7 @@ export function TelegramPopup() {
   }, [pathname]);
 
   const handleJoin = () => {
-    window.open('https://t.me/The_dark_universe', '_blank');
+    window.open('https://t.me/Study_Portalz', '_blank');
     setIsOpen(false);
   };
 
